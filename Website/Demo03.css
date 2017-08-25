@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+body,h1,ul,h2,p,figure,ol,h2,h3{
+	margin:0;
+	padding: 0;
+}
+ul{
+	list-style: outside none none;
+}
+a{
+	text-decoration: none;//取消下划线
+}
+
+.none{
+	display: none;
+}
+#header{
+	width: 100%;
+	min-width: 1260px;
+	height: 70px;
+	background-color: #000000;
+}
+
+#header .center{
+	width: 1220px;
+	height: 80px;
+	/*background-color: red;*/
+	margin:0 auto; 
+}
+
+#header .logo{
+	width: 340px;
+	height: 70px;
+	background-image:url(jd.png); 
+	text-indent: -9999px;
+	float:left;
+
+}
+
+#header .link{
+	/*background-color: red;*/
+	width: 650px;
+	height: 60px;
+	line-height: 70px;
+	color: #eee;
+	float:right;
+}
+#header .link li{
+	width: 120px;
+	text-align: center;
+	float: left;
+}
+#header .link a{
+	color: #D3D3D3;
+	display: block;
+}
+
+#header .link a:hover/*,#nav>section>ul>li.active a定位在首页*/{
+ background-color: #66FF99;
+}
+
+#footer{
+		height: 360px;
+		background-color: #222;
+		clear: both; /*清理第03（1）所产生的浮动*/
+		
+	}
+
+
+#footer .top{
+width: 1263px;
+height: 290px;
+margin: 0 auto;
+text-align: center;
+}
+
+#footer .blok{
+	width: 410px;
+	height: 290px;
+	/*background-color: red;*/
+	display: inline-block;
+	text-align: left;
+	color: #ccc;
+	vertical-align: top; /*垂直居顶*/
+
+}
+#footer h2{
+	font-size: 24px;   /*改变字体大小*/
+	font-weight: normal;  /*改变字体粗细*/
+	padding: 20px 0 0 20px;
+}
+#footer hr{
+	width: 100%
+	border:2px dashed #333; /*设置虚线*/
+}
+
+#footer ul{
+	font-size: 15px;
+	color: #777;
+	text-indent: 20px; /*设置首行缩进*/
+	line-height: 2; /*设置文本的间距*/
+}
+
+#footer .bottom{
+	height: 80px;
+	line-height: 90px;
+	text-align: center;       /*居中*/
+	color:#777;
+	background-color: #000;
+	border: 1px solid #444;
+}
