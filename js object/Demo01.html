@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       html,body{
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        }
+       h1{
+           position: absolute;
+           top:50%;
+           left:50%;
+           -webkit-transform:translate(-50%,-50%);
+           transform: translate(-50%,-50%);
+           font-size: 1.7rem;
+           font-family: "宋体";
+           text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+           line-height: 1.2;
+           color:#fff;
+           z-index: 2;
+       }
+
+       div{
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           -webkit-transition: -webkit-transform 0.4s ease;
+           transition: -webkit-transform 0.4s ease;
+           transition: transition 0.4s ease,-webkit-transform 0.4s ease;
+           -webkit-transform:translateX(-100%);
+           transform：translateX(-100%);
+
+       }
+
+       div:nth-of-type(1){
+           background-color:#a2666f;
+       }
+
+       div:nth-of-type(2){
+           background-color: #f49390;
+       }
+
+       div:nth-of-type(3){
+           background: #f45866;
+
+       }
+
+       div:nth-of-type(4){
+           background: #631a86;
+       }
+       input[type="radio"]{
+           position: absolute;
+           left: 0;
+           width: 10px;
+           height: 25px;
+           outline-offset:-10px;
+           margin: 0;
+           z-index: 1;
+           cursor: pointer;
+       }
+
+       input[type="radio"]:nth-of-type(1){
+           outline-color:#a2666f;
+           top:0%;
+       }
+       input[type="radio"]:nth-of-type(1){
+           outline-color:#831627;
+           top:25%;
+       }
+       input[type="radio"]:nth-of-type(1){
+           outline-color:#49e41a;
+           top:50%;
+       }
+       input[type="radio"]:nth-of-type(1){
+           outline-color:#ca1986;
+           top:75%;
+       }
+       input[type="radio"]:checked+div{
+           -webkit-transform:translateX(0%);
+           transform：translateX(0%);
+           -webkit-transition:-webkit-transform 0.4s ease 0.4s;
+           transition:-webkit-transform 0.4s ease 0.4s;
+           transition:transform 0.4s ease 0.4s;
+           transition:transform 0.4s ease 0.4s,-webkit-transform 0.4s ease 0.4s;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Pure CSS Colorful Tabs</h1>
+    <input type="radio" name="name" checked="checked"/>
+    <div></div>
+    <input type="radio" name="name"/>
+    <div></div>
+    <input type="radio" name="name"/>
+    <div></div>
+    <input type="radio" name="name"/>
+    <div></div>
+</body>
+</html>
