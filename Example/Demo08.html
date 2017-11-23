@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body {margin:0px ; padding: 0px}
+    canvas{display:block}
+    </style>
+
+    <script>
+        window.onload=function(){
+            
+            /*让我们得到HTML画布元素，所以我们画它*/
+            var canvas=document.getElementById("c");
+            var ctx=canvas.getContext("2d");
+
+            var W = window.innerWidth,/*得到宽度*/
+                 H =window.innerHeight;/*得到高度*/
+               /*set our canvas to our size of width and height*/
+                 canvas.width = W;
+                 canvas.height = H;
+
+                 /* ==================Box class===================*/
+                 function Box(_x,_y)
+                 {
+
+                     //the X/Y position
+                     this.x = _x;
+                     this.y = _y;
+
+                    /*设置速度给X/Y*/
+                     this.xVel = 10 + Math.random()*20;
+                     this.yVel = 1;
+
+                    /*设置盒子的高和宽*/
+                     this.width= 20;
+                     this.height= 20;
+
+                    /*设置盒子的随机颜色*/
+                     this.r=Math.round(Math.random()*255);
+                     this.g=Math.round(Math.random()*255);
+                     this.b=Math.round(Math.random()*255);
+
+                     this.rgba="rgba("+this.r+","+this.g+","+this.b+",1)";
+
+                    /*定义一个方法*/
+                     this.draw=function()
+                     {
+                         ctx.strokeStyle=this.rgba;
+                         ctx.strokeRect(this.x,this.y,this.width,this.height);
+
+                         this.update();
+                     }
+                     /*处理箱子的逻辑*/
+                     this.update=function()
+                     {
+                        /*检查一下球是否离开我们的屏幕以及什么时候离开*/
+                        /*这样做，使其反弹*/
+                        /*检查左边的窗口边框*/
+                         if(this.x < 0)
+                         {
+                             this.x=0;/*set its posittion to 0*/
+                             this.xVel *= -1;/*使其反弹*/
+                         }
+
+                        /*检查右边框*/
+                         if(this.x > W - this.width)
+                         {
+                             this.x= W - this.width;/*set its postion to 0*/
+                             this.xVel *= -1;/*使其反弹*/
+                         }
+
+                         /*检查上边框*/
+                         if(this.y < 0){
+                             this.y=0;/*当复制/粘贴发生的事件*/
+
+                             this.yVel *= -1;/*使其反弹*/
+                         }
+
+                    
+                         //
+                         //在到达底部时，尝试按其速度添加y
+                         if(this.y < H - this.height)
+                         this.yVel += .25;
+
+                         
+                         //检查底部边框
+                         if(this.y > H - this.height)
+                         {
+                             //当它从底部反弹时降低球速
+                             this.xVel *= .5;
+                             this.yVel *= .5;
+
+                        
+                             this.y = H - this.height;//set its poisition to 0
+                             this.yVel *= -1;//使其反弹
+                         }
+
+                         //移动加速X/Y
+                         this.x +=this.xVel;
+                         this.y +=this.yVel;
+
+                     }
+                 }
+
+                 //制作盒子
+                 var boxes=[];
+
+
+                 //在屏幕绘制
+                 function draw()
+                 {
+
+                    //背景
+                    ctx.globalCompositeOperation="source-over";
+                    ctx.fillStyle="rgba(0,0,0,0.5)"
+                    ctx.fillRect(0,0,W,H);
+
+                    ctx.globalCompositeOperation="lighter"
+
+                    //在屏幕绘制东西的功能
+                     for(i=0;i<boxes.length;i++)
+                     boxes[i].draw();
+
+                     update();
+                 }
+
+                 //在屏幕绘制
+                 function update()
+                 {
+                     //循环通过框并绘制它们
+                     for(i=0;i<boxes.length;i++)
+                     boxes[i].update();
+                 }
+                 
+                 //每隔一分钟我们指定添加框
+                 setInterval(function(){
+                 
+                     boxes.push( new Box(0,0))
+                 },1000);
+
+                    //30毫秒更新绘图
+                 setInterval(draw,30);
+        }
+    </script>
+</head>
+<body>
+    <canvas id="c"></canvas>
+
+
+    
+</body>
+</html>

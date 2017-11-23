@@ -1,4 +1,4 @@
-##1、%(取摸)的应用
+ # 1、%(取摸)的应用
 ```
 <script>
    window.onload=function ()
@@ -9,7 +9,7 @@
                // i 0 1 2 3 4 5 6
               if (i%2==0)
             {
-                   aLi[i].style.background='#yellow';
+                   aLi[i].style.background=' # yellow';
              }
               else                //隔行变色的效果
              }
@@ -18,7 +18,7 @@
 }
 </                        script>
 ```
-##2、秒转时间例子
+ # 2、秒转时间例子
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +37,7 @@
 </body>
 </html>
 ```
-##3、arguments用法
+ # 3、arguments用法
   - 是个数组，多少参都可以。
 ```
 <!DOCTYPE html>
@@ -64,7 +64,7 @@
 </html>
 ```
 
-##4、获取非行间元素
+ # 4、获取非行间元素
 - 该代码好像失效
     
 ```
@@ -75,7 +75,7 @@
 	<meta charset="UTF-8">
 	<title>Wang.qingwen</title>
 	<style >
-		#divl {width:200px;height: 20px;background: #000000;}
+		 # divl {width:200px;height: 20px;background:  # 000000;}
 	</style>
 	<script >
 function getStyle(obj,name)
@@ -103,7 +103,7 @@ function getStyle(obj,name)
 </html>
 
 ```
-##5、数组添加和删除元素
+ # 5、数组添加和删除元素
    - 添加
            (1)push，从尾部添加
            (2)unshift, 从头部添加
@@ -142,7 +142,7 @@ function getStyle(obj,name)
 </html>
 ```
 
-#二0、DOM基础
+ # 二0、DOM基础
  - 创建DOM元素
  1.createElement(标签名) 作用是 创建一个子节点。
 2.appendChild(节点) 追加一个子节点，下面来看代码。
@@ -266,7 +266,7 @@ function getStyle(obj,name)
 </html>
 
 ```
-#表格应用
+ # 表格应用
 - 获取 
 1.tBodies、tHead、tFoot、rows、cells
 下面来看代码
@@ -358,7 +358,7 @@ function getStyle(obj,name)
      		}
      		else
      		{
-     			oTab.tBodies[0].rows[i].style.background='#ccc';
+     			oTab.tBodies[0].rows[i].style.background=' # ccc';
      		}
      	}
 
@@ -437,7 +437,7 @@ function getStyle(obj,name)
      		}
      		else
      		{
-     			oTab.tBodies[0].rows[i].style.background='#ccc';
+     			oTab.tBodies[0].rows[i].style.background=' # ccc';
      		}
      	}
 
@@ -659,7 +659,7 @@ function getStyle(obj,name)
 </html>
 
 ```
-#JS运动基础
+ # JS运动基础
 - 匀速运动
 1.废话不多说直接看例子
 ```
@@ -670,7 +670,7 @@ function getStyle(obj,name)
 	<meta charset="UTF-8">
 	<title>创建子节点</title>
 	<style type="text/css">
-		#div1{width: 200px;height: 200px;background: yellow;position: absolute;top: 50px;left:0px;}
+		 # div1{width: 200px;height: 200px;background: yellow;position: absolute;top: 50px;left:0px;}
 	</style>
 	<script >
      var timer=null;
@@ -707,8 +707,8 @@ function getStyle(obj,name)
 </html>
 
 ```
-#三、js事件
+ # 三、js事件
 - 键盘事件
 1.   keycode
 
-#四、Ajax基础
+ # 四、Ajax基础
