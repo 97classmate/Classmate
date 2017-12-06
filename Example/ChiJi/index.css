@@ -1,0 +1,610 @@
+
+body{
+    font-family: 'open_sansregular';
+    background: #ddd;
+    ]font-size: 100%;
+    max-width:960px;
+}
+
+body,h1,ul,h2,li{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+   list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.none{
+    display: none; 
+}
+#header{
+    width: 100%;
+    min-width: 1260px;
+    height: 80px;
+    background-color: #000000;
+}
+
+#header .center{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+#header .logo{
+	width: 350px;
+	height: 70px;
+
+    background-image:url(http://a1.qpic.cn/psb?/V10jTczX0s5ZuT/lQ14S.aCpFqfGCwpkyYGdgRkzGZnxenk.IMVr7rGkYI!/b/dDwBAAAAAAAA&ek=1&kp=1&pt=0&bo=WAJWAFgCVgADACU!&vuin=1732609762&tm=1512180000&sce=60-1-1&rf=0-0); 
+    background-size: 120% 110%;
+    text-indent: -9999px;
+    float:left;
+
+
+}
+
+.main-nav span{
+  
+     font-size: 8px; 
+     color: #838383;
+      font-family: 'Tahoma';
+       text-transform: uppercase;/*控制文本的大小写*/
+        
+}
+#header .link{
+    width: 650px;
+    height: 70px;
+    line-height: 70px;
+    color: #eee;
+    float:right;
+}
+
+#header .link li{
+    width: 120px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+}
+
+#header .link a{
+    display: block;
+    color: #d3d3d3
+}
+
+#header .link a:hover{
+    background-color: none;
+}
+
+#body{
+   
+
+      width: 100%;
+      min-width: 1260px;
+      height: 580px;
+      background:url(http://img.netbian.com/file/2017/0926/2ce0251ed747562be4a48d9be0396346.jpg)no-repeat center;
+
+      background-size: 100% 120%;  
+    
+      position:relative;
+     
+}
+
+ .top-link{
+     width: 185px;
+     height:50px;
+     position: absolute;
+     background-color: #DAA520;
+     top:60%;
+     left: 40%;
+     margin: -20px 0 0 0;
+     font-size: 17px;
+     color: #000000;
+     cursor: pointer;/*设置鼠标放上去显示的图标样式*/
+     font-weight: bold;
+     padding: 0 10px;
+     border-radius: 15px;
+
+     
+ }
+/*----------------------------------- body menu------------------------------------------------------------------------*/
+
+
+#photo{
+   width: 1260px;
+   height:600px;
+   position:relative;
+}
+
+
+#photo .sidebox {
+       width: 400px;
+       height: 380px;
+       float: right;
+       background-color:#F8F8F8;
+       line-height: 20px;
+       padding: 15px;
+       position: relative;
+       top: 80px;
+       margin-right: 12px;
+
+}
+#photo h2{
+  font-weight: normal;
+  font-family: "楷体";
+  font-size: 30px;
+  text-align: center;
+
+}
+
+
+#photo .head li{
+      display:inline-block;
+    
+      text-align: center;
+      color: blue;
+      position: relative;
+      top:8px;
+      margin: 10px;
+    
+}
+
+#photo .head a{
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 40px;
+  margin:5px 0;
+  text-align: center;
+  text-indent: 33px;
+  color: #333;
+  font-size:15px;
+
+ 
+}
+
+#photo .sidebox a.trag1{
+  background: url(./ico/1.png)no-repeat 12px center;
+
+}
+
+#photo .sidebox a.trag2{
+  background: url(./ico/2.png)no-repeat 10px center;
+
+}
+
+#photo .sidebox a.trag3{
+  background: url(./ico/3.png)no-repeat 12px center;
+
+}
+#photo .sidebox a.trag4{
+  background: url(./ico/4.png)no-repeat 10px center;
+
+}
+#photo .sidebox a.trag5{
+  background: url(./ico/5.png)no-repeat left center;
+
+}
+#photo .sidebox a.trag6{
+  background: url(./ico/6.png)no-repeat 12px center;
+
+}
+
+#photo .sidebox a.trag7{
+  background: url(./ico/123.png)no-repeat left center;
+
+}
+#photo .sidebox a.trag8{
+  background: url(./ico/123.png)no-repeat left center;
+
+}
+#photo .sidebox a.trag9{
+  background: url(./ico/9.png)no-repeat left center;
+
+}
+#photo .sidebox a.trag10{
+  background: url(./ico/10.png)no-repeat 10px center;
+
+}
+#photo .sidebox a.trag11{
+  background: url(./ico/11.png)no-repeat 12px center;
+
+}
+#photo .sidebox a.trag12{
+  background: url(./ico/12.png)no-repeat 12px center;
+
+}
+
+#photo .infor{
+  width: 800px;
+  height: 60px;
+  line-height: 40px;
+  float: left;
+  position: relative;
+   top: 0;
+}
+
+#photo .infor ul li{
+  display: inline-block;
+  border-top: 2px ;
+  padding: 9px;
+  margin-right: 10px;
+  font-size:18px;
+  position: relative;
+ left:50px;
+ text-decoration:underline
+
+}
+
+#photo .infor li a{
+color: #000;
+
+}
+
+#photo .infor li a:hover{
+  background-color: pink;
+}
+
+
+#photo .infor li:first-child{
+  background-color: #D8D8D8;
+  border-top: 3px solid #FFFF66;
+
+}
+
+#B_photo{
+        width: 800px;
+        min-height: 400px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        margin: 50px auto ;
+        top: 20px;
+        left:0; 
+    }
+
+
+#B_photo ol{
+        position: absolute;
+        right: 5px;
+        bottom: 4px;
+        z-index: 99999;
+    }
+    
+ #B_photo  ol li{
+        float: left;
+        margin-right: 3px;
+        display: inline;/*没用之前有2个数字的存在*/
+        cursor: pointer;
+        background:#ddd;
+        border: 2px solid #ddd;
+        padding: 3px 8px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+      #B_photo .text{
+        widows: 100%;
+        left: 0;
+        bottom: 0;
+        height: 60px;
+
+    }
+
+    #B_photo .text div{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        filter: alpha(opacity:40);
+        opacity: 0.4;
+        z-index: 20px;
+    }
+
+    #B_photo .text span{
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        color: white;
+        z-index: 9999;
+        text-align: center;
+        font-size: 20px;
+
+    }
+
+   #B_photo .mark{
+        padding: 5px 8px;
+        font-weight: bold;
+        color: #ddd(46, 9, 9);
+        background-color:#DAA520;
+        position: relative;
+        bottom: 2px;
+
+    }
+    #B_photo ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    
+    #B_photo ul li{
+        width:800px;
+        height: 450px;
+        float: left;
+    }
+    
+    #B_photo ul img{
+        float: left;
+        width: 800px;
+        height:450px;
+    }
+/*--------------------------- 脚部-----------------------------------*/
+
+#footer{
+  width: 1260px;
+  height: 150px;
+background-color: #000;
+}
+
+#footer .top{
+  width: 800px;
+  height: 50px;
+
+ padding-left: 190px;
+  color: green;
+
+}
+
+#footer .top ul{
+  width: 800px;
+  display: inline-block;
+   text-align: center;
+
+ }
+
+ #footer .top ul li{
+  
+  display: inline-block;
+     text-align: center;
+     margin-right: 10px;
+     padding: 5px;
+     position: relative;
+     top:2px;
+     font-size:12px;
+     top: 15px;
+
+ }
+
+#footer .top ul a{
+color: #ccc;
+
+}
+
+#footer .bottom{
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 12px;
+
+}
+
+
+/*.photo{
+     width: 1200px;;
+     height: 200px;
+     position: absolute;
+     margin: 5px 5px 5px 10px;
+    list-style: none;
+    padding: 20px;
+  
+    
+ }
+
+
+
+.nav{
+    width: 800px;
+    right: 50px;
+ 
+    line-height:50px;
+
+    text-decoration: underline;
+    cursor: pointer;
+     color: #cccv;
+    float:left;
+    text-align: center;
+   
+
+}
+
+
+#J_photo ul{position: absolute;
+	top: 0;
+	left:0;
+	z-index: 9999;
+}
+
+
+.nav .active 
+{  
+
+  display:inline;
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
+  padding-left: 50px;
+  font-weight: normal;
+}
+
+#j_photo .nav a:hover{
+    color:  red;
+}*/
+/*text-decoration: underline;      // 添加下划线*/
+/*--------------------------------------> 轮播 <----------------------------------*/
+
+
+    /*background-repeat:repeat-y;  //照片垂直平铺 */
+    /*.B_photo{
+        width: 800px;
+        min-height: 400px;
+        height: 200px;
+        margin: 2px auto #000000;
+        border: 2px solid #ddd;
+        overflow: hidden;
+        position: relative;
+        margin: 100px auto ;
+        right: 200px;
+        
+      
+    }
+    .B_photo .text{
+        widows: 100%;
+        left: 0;
+        bottom: 0;
+        height: 60px;
+
+    }
+
+    .B_photo .text div{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        filter: alpha(opacity:40);
+        opacity: 0.4;
+        z-index: 20px;
+    }
+
+    .B_photo .text span{
+        left: 0;
+        top:0;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        color: white;
+        z-index: 9999;
+        text-align: center;
+        font-size: 20px;
+
+    }
+    
+     ol{
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        z-index: 99999;
+    }
+    
+    ol li{
+        float: left;
+        margin-right: 3px;
+        display: inline;/*没用之前有2个数字的存在
+        cursor: pointer;
+        background:#ddd;
+        border: 2px solid #ddd;
+        padding: 3px 8px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    
+    .mark{
+        padding: 5px 8px;
+        font-weight: bold;
+        color: #ddd(46, 9, 9);
+        background-color:#DAA520;
+        position: relative;
+        bottom: 2px;
+
+    }
+    .B_photo ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    
+    .B_photo ul li{
+        width:800px;
+        height: 450px;
+        float: left;
+    }
+    
+    .B_photo ul img{
+        float: left;
+        width: 800px;
+        height:450px;
+    }*/
+/*---------------------------------------新闻----------------------------------------*/
+/*#container{
+    width: 1260px;
+    height: 1200px;
+    margin: 30px auto;
+}
+
+#container .sidebar{
+    width: 340px;
+    height: 1200px;
+    float: right;
+}
+
+#container .sidebox{
+    border: 1px solid #DAA520;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+#container .news{
+    padding: 10px 0;
+}*/
+
+/*.sidebox{
+    width: 420px;
+    right: 200px;
+    position: absolute;
+    display:block;
+    background-color: red;
+      margin:20px auto 0;
+      padding: 20px; 
+  
+
+   
+    
+}
+.tale_comm{
+    width: 380px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid rgb(236, 222, 20);
+    margin-left: 25px;
+    float:left;
+    text-align: center;
+ 
+    
+}
+
+.news .active{
+    line-height: 15px;
+    float: left;
+}
+
+.tab_comm ul {
+    width: 450px;
+}
+
+*/
+
+
