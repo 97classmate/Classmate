@@ -1,0 +1,149 @@
+@charset "utf-8";
+.log{
+	padding: 0;
+	height: 30px;
+}
+
+#myCarousel{
+	margin: 50px 0 0 0;
+}
+#navbar-collapse{
+	margin-top: 0;
+}
+.carousel-inner img{
+	margin: 0 auto;
+}
+
+.tab-h2{
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #0059B2;
+}
+
+.tab-p{
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.tab1{
+	margin: 30px 0;/*上下*/
+	color: #666;
+}
+
+.tab1 .text-muted{
+	color: #999;
+	text-decoration: line-through;/*下划线*/
+}
+
+.tab1 .media-heading{
+	margin: 5px 0 20px 0;
+}
+
+.tab1 .col{
+	padding: 20px;
+}
+
+#footer{
+	background-color: #000000;
+	text-align: center;
+	padding: 20px;
+
+}
+
+.tab2{
+	background-image: url(789.jpg);
+}
+
+.tab3{
+	background-image: url(789.jpg);
+}
+
+.tab2 img{
+	width: 80%;
+	height: 80%;
+}
+
+.tab2{
+	padding: 50px 20px;
+	text-align: center;
+}
+.tab3 img{
+	width: 80%;
+	height: 80%;
+}
+.tab3{
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.tab2 h3{
+	font-size: 20px;
+}
+
+.text p{
+	font-size: 14px;
+
+}
+
+
+/*小屏幕（大于等于768px）*/
+@media(min-width:768px;){
+	.tab-h2{
+		font-size: 30px;
+	}
+	.tab-p{
+		font-size: 18px;
+	}
+
+
+.tab h3{
+	font-size: 20px;
+}
+
+.text p{
+	font-size: 14px;
+}
+.tab2-text{
+	float:left;
+}
+.tab2-img{
+	float: right;
+}
+}
+/*中等屏幕(大于等于992px)*/
+@media(min-width: 992px){
+.tab-h2{
+		font-size: 28px;
+	}
+	.tab-p{
+		font-size: 16px;
+	}
+
+	.text h3{
+		font-size: 22px;
+	}
+	.text p{
+		font-size: 15px;
+	}
+	.tab2-text{}
+}
+/*大屏幕（大于等于1200）*/
+@media(min-width: 1200px){
+	.tab-h2{
+		font-size: 30px;
+	}
+	.tab-p{
+		font-size: 18px;	
+	}
+
+	.tab h3{
+	font-size: 26px;
+}
+
+.text p{
+	font-size: 18px;
+}
+
+}

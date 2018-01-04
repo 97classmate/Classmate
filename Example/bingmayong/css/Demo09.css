@@ -86,3 +86,22 @@ body{
 	margin:100px 145px auto;
 	
 }
+
+
+.top-link{
+    width: 180px;
+	height: 49px;
+	background-color: #DAA520 ;
+	position: absolute;
+	top: 60%;
+	left: 45%;
+	margin: -25px 0 90 0;
+	color: #000000;
+	border-radius: 10px;
+	font-size: 19px;
+	padding: 0 10px;
+	outline: none;
+	cursor: pointer;/*设置鼠标放上去显示的图标样式*/
+    font-weight: bold;
+   
+}
